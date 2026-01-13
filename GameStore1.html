@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameShope</title>
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <a href="#home" class="logo">GameShope</a>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#About Us">About Us</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#services">Services</a>
+      <a href="#feedback">Feedback</a>
+      <a href="SingIn.html">Sign In</a>
+      <a href="profile.html" id="profileDisplay">
+        <div id="profileAvatar"></div>
+        <span id="profileName">Profile</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- HOME / HERO SECTION -->
+  <section id="home" class="Home">
+    <div class="home-content">
+      <h1>Welcome to <span>GameStore</span></h1>
+      <h3 class="typing-text">Your Ultimate Gaming Destination</h3>
+      <p>
+        Discover the latest console and PC games. Epic adventures, action-packed battles, and exclusive deals await you across PlayStation, Xbox, Nintendo, and PC.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="container">
+      <img src="pictures/jon1.webp" alt="Red Dead 1">
+    </div>
+  </section>
+
+  <section class="home-feature">
+  <div class="home-slider" id="homeSlider">
+
+    <div class="home-card">
+      <h3>Red Dead Redemption 2</h3>
+      <p>
+        The famous Cowboy american Game Red Dead Redemption 2
+        is now available For All consoles.
+      </p>
+      <img src="pictures/rdr2.png" alt="">
+      <br><br><br><br>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="home-card">
+      <h3>Battlefield 6</h3>
+      <p>
+        Battlefield 6 is a first-person shooter video game
+        published by Electronic Arts.
+      </p>
+      <br><br><br>
+      <img src="pictures/battle.png" alt=""><br><br><br><br>
+      <button class="buy-btn">Buy Now</button>
+
+    </div>
+
+    <div class="home-card">
+      <h3>Cyberpunk 2077</h3>
+      <p>
+        Cyberpunk 2077 is an open-world action-adventure
+        video game developed by CD Projekt RED.
+      </p>
+      <br><br>
+      <img src="pictures/cyber.png" alt="">
+      <br><br><br><br>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="home-card">
+      <h3>Ghost of Tsushima</h3>
+      <p>
+        Ghost of Tsushima is a 2020 action-adventure game
+        developed by Sucker Punch Productions.
+      </p>
+      <br>
+      <img src="pictures/ghost.png" alt="">
+      <br><br><br>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="home-card">
+      <h3> Call Of Duty:Black OPS Cold War</h3>
+      <p>
+Call of Duty: Black Ops Cold War 
+is a 2020 first-person game developed by Treyarch.
+      </p>
+      <img src="pictures/cod.png" alt="">
+     <br><br><br>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </div>
+  <div class="slider-bar">
+    <span class="slider-thumb" id="sliderThumb"></span>
+  </div>
+</section>
+
+
+  <!-- GAMES SECTION -->
+  <section id="About Us" class="Home games">
+    <div class="home-content">
+      <h1>About <span>Us</span></h1>
+      <p>We are a gaming store created by gamers for gamers. Here you can find your favorite games, accessories, and more — all at fair prices. Our goal is to make shopping easy, fast, and safe. When you order, we prepare your item carefully and deliver it to you as soon as possible, so you can start playing without waiting.</p>
+      <div class="container">
+     <img src="pictures/delivery-boy.svg" alt="leon" width="550px"  & height="750px" &  >
+
+     
+      
+
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORMS SECTION -->
+  <section id="platforms" class="Home platforms">
+    <div class="home-content">
+      <h1>Supported <span>Platforms</span></h1>
+      <p>Play your favorite games on PlayStation, Xbox, Nintendo, or PC. We have content for every gamer.</p>
+      <div class="container">
+          <p class="section-subtitle">Popular Offers</p>
+
+          <h2 class="h2 section-title">
+            Our Special <span class="span">Black Friday Deal</span>
+          </h2>
+
+          <p class="section-text">
+Black Friday is here — and the deals are insane! Level up your gaming setup with massive discounts on the hottest games, accessories, and gear. Whether you’re upgrading your console, building your next PC, or stocking up on new titles, this is your chance to save big. Don’t wait — once these Black Friday deals are gone, they’re gone!          </p>
+
+         
+
+          <ul class="platforms-menu-list">
+
+            <li>
+              <div class="platforms-menu-card">
+
+                <div class="card-platforms">
+                  <img src="pictures/ps5.jpg" loading="lazy" alt="PlayStation" class="w-100">
+
+                  <div class="badge">-20%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Consoles</p>
+                <button class="buy-btn">Buy Now</button>
+
+                  
+                </div>
+
+                <h3 class="h3 card-title">PlayStation Pro 5 </h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$649.99+ 60 points</data>
+
+                  <del class="del" value="160.00">$160.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="platforms-menu-card">
+
+                <div class="card-platforms">
+                  <img src="pictures/xboxx.jpg" width="300" height="300" loading="lazy" alt="Xbox Siries X" class="w-100">
+
+                  <div class="badge">-33%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Console</p>
+                <button class="buy-btn">Buy Now</button>
+
+                  
+
+                <h3 class="h3 card-title">Xbox Series X</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="29.00">$29.00 + 5 points</data>
+
+                  <del class="del">$39.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="platforms-menu-card">
+
+                <div class="card-platforms">
+                  <img src="pictures/xbox1.jpg" width="300" height="300" loading="lazy" alt="Xbox Siries S" class="w-100">
+
+                  <div class="badge">-25%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Console</p>
+
+                  <button class="buy-btn">Buy Now</button>
+
+
+                <h3 class="h3 card-title">Xbox Series S</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">$49.00 + 10 points</data>
+
+                  <del class="del">$69.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-platforms">
+
+                <div class="card-platforms">
+                  <img src="pictures/Ps4p.jpg" width="300" height="300" loading="lazy" alt="PlayStation 4" class="w-100">
+
+                  <div class="badge">-10%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Console</p>
+<button class="buy-btn">Buy Now</button>
+
+                </div>
+
+                <h3 class="h3 card-title">Ps4 Pro</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="59.00 ">$59.00 + 10 points</data>
+
+                  <del class="del">$69.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="platforms-menu-card">
+
+                <div class="card-platforms">
+                  <img src="pictures/pc1.jpg" width="300" height="300" loading="lazy" alt="PC" class="w-100">
+
+                  <div class="badge">-25%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Pc</p>
+<button class="buy-btn">Buy Now</button>
+
+                  
+
+                <h3 class="h3 card-title">PC</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">$49.00 + 10 points</data>
+
+                  <del class="del">$69.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-platforms">
+
+                <div class="card-platforms">
+                  <img src="pictures/ps2.jpg" width="300" height="300" loading="lazy" alt="Wendy&#39;s PlayStation 2" class="w-100">
+
+                  <div class="badge">-10%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Play Station</p>
+<button class="buy-btn">Buy Now</button>
+
+                 
+                </div>
+
+                <h3 class="h3 card-title">Console</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">$49.00+ 10 points</data>
+
+                  <del class="del">$69.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+             <li>
+              <div class="platforms-menu-card">
+
+                <div class="card-platforms">
+                  <img src="pictures/xboxr1.jpg" width="300" height="300" loading="lazy" alt="PC" class="w-100">
+
+                  <div class="badge">-25%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Console</p>
+<button class="buy-btn">Buy Now</button>
+
+                  
+
+                <h3 class="h3 card-title">Xbox Series X</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">$49.00 + 10 points</data>
+
+                  <del class="del">$69.00</del>
+
+                </div>
+
+              </div>
+            </li>
+
+             <li>
+              <div class="platforms-menu-card">
+
+                <div class="card-platforms">
+                  <img src="pictures/playr1.jpg" width="300" height="300" loading="lazy" alt="PC" class="w-100">
+
+                  <div class="badge">-25%</div>
+
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">PlayStation</p>
+<button class="buy-btn">Buy Now</button>
+
+                  
+
+                <h3 class="h3 card-title">Console</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">$49.00 + 10 points</data>
+
+                  <del class="del">$69.00</del>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="Home">
+    <div class="home-content">
+      <h1>Our <span>Services</span></h1>
+      <p>From game recommendations to gift cards and updates, we make sure your gaming experience is smooth and epic.</p>
+      <div class="container">
+        <p>Game Recommendations</p>
+        <p>Gift Cards</p>
+        <p>Updates & Support & discounts</p>
+
+
+
+          <ul class="section-list">
+
+            <li class="section-item section-lg">
+              <div class="section-card">
+
+                <img src="pictures/key1.jpg" width="550" height="450" loading="lazy" alt="Discoud For Keyboard!" class="section-img">
+
+                <div class="section-item-content">
+                  <p class="sectionsubtitle">50% Off Now!</p>
+                  <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$649.99+ 70 points</data>
+
+                  <h3 class="section-title">Keyboard</h3>
+
+                 
+
+                  <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="section-item section">
+              <div class="section-card">
+
+                <img src="pictures/hed.jpg" width="550" height="465" loading="lazy" alt="Delicious Headseat" class="section-img">
+
+                <div class="section-item-content">
+                  <h3 class="section-title">Headseat</h3>
+
+                  <p class="section-text">50% off Now</p>
+<div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$349.99+ 60 points</data>
+           <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="section-item section-sm">
+              <div class="section-card">
+
+                <img src="pictures/cr1.jpg" width="550" height="465" loading="lazy" alt="Control Elite" class="section-img">
+
+                <div class="section-item-content">
+                  <h3 class="section-title">Control Elite</h3>
+
+                  <p class="section-text">44% off Now</p>
+<div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$200.99+ 60 points</data>
+                  <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="section-item section-md">
+              <div class="section-card">
+
+                <img src="pictures/desk.jpg" width="550" height="220" loading="lazy" alt="Desktop" class="section-img">
+
+                <div class="section-item-content">
+                  <h3 class="section-title">Desktop</h3>
+
+                  <p class="section-text">Sale off 50% only this week</p>
+<div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$400+ 60 points</data>
+                <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="section-item section">
+              <div class="section-card">
+
+                <img src="pictures/moues.jpg" width="550" height="465" loading="lazy" alt="Delicious Moues" class="section-img">
+
+                <div class="section-item-content">
+                  <h3 class="section-title">Moues</h3>
+
+                  <p class="section-text">69% off Now</p>
+<div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$240.99+ 60 points</data>
+                 <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="section-item section">
+              <div class="section-card">
+
+                <img src="pictures/monitor.jpg" width="550" height="465" loading="lazy" alt="Delicious Monitor" class="section-img">
+
+                <div class="section-item-content">
+                  <h3 class="section-title">Monitor</h3>
+
+                  <p class="section-text">30% off Now</p>
+<div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+                 
+
+                  <data class="price">$550.66+ 60 points</data>
+                  <button class="buy-btn">Buy Now</button>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ================= FEEDBACK SECTION ================= -->
+<section class="section section-divider white testi">
+  <div class="container">
+
+    <p class="section-subtitle">Feedback</p>
+
+    <h2 class="h2 section-title">
+      Our Customers <span class="span">Reviews</span>
+    </h2>
+
+    <p class="section-text">
+      Our satisfied customers have come to love our gaming store. Share your feedback below!
+    </p>
+
+    <ul class="testi-list has-scrollbar" id="testimonialsList">
+
+      <li class="testi-item">
+        <div class="testi-card">
+
+          <div class="profile-wrapper">
+
+            <figure class="avatar">
+              <img src="pictures/pe1.jpg" width="80" height="80" loading="lazy" alt="Robert William">
+            </figure>
+
+            <div>
+              <h3 class="h4 testi-name">Peshawa barjnze</h3>
+              <p class="testi-title">Gamer</p>
+            </div>
+
+          </div>
+
+          <blockquote class="testi-text">A great gaming website should feel fast, smooth, and exciting from the first second.</blockquote>
+
+        </div>
+      </li>
+
+      <li class="testi-item">
+        <div class="testi-card">
+
+          <div class="profile-wrapper">
+
+            <figure class="avatar">
+              <img src="pictures/ha1.jpg" width="80" height="80" loading="lazy" alt="Thomas Josef">
+            </figure>
+
+            <div>
+              <h3 class="h4 testi-name">Hama Kurdish</h3>
+              <p class="testi-title">Gamer</p>
+            </div>
+
+          </div>
+
+          <blockquote class="testi-text">
+            Content is also super important. Clear descriptions and honest reviews help players know what they’re getting.
+          </blockquote>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+<!-- ================= FEEDBACK FORM ================= -->
+<section id="feedback" class="Home feedback">
+  <div class="home-content">
+    <h1><span>Feedback</span></h1>
+    <p>We’d love to hear from you! Share your thoughts to help us improve GameStore.</p>
+    <form class="container" id="feedbackForm">
+      <input type="text" id="fbName" placeholder="Your Name" required>
+      <input type="email" id="fbEmail" placeholder="Your Email" required>
+      <textarea id="fbText" placeholder="Your Feedback" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FEEDBACK JS ================= -->
+<script>
+const feedbackForm = document.getElementById('feedbackForm');
+const testimonialsList = document.getElementById('testimonialsList');
+
+feedbackForm.addEventListener('submit', function(e) {
+  e.preventDefault(); // Prevent page reload
+
+  // Get input values
+  const name = document.getElementById('fbName').value.trim();
+  const email = document.getElementById('fbEmail').value.trim();
+  const text = document.getElementById('fbText').value.trim();
+
+  if (!name || !email || !text) return;
+
+  // Create new testimonial item
+  const li = document.createElement('li');
+  li.className = 'testi-item';
+  li.innerHTML = `
+    <div class="testi-card">
+      <div class="profile-wrapper">
+        <figure class="avatar">
+          <img src="pictures/default-avatar.png" width="80" height="80" loading="lazy" alt="${name}">
+        </figure>
+        <div>
+          <h3 class="h4 testi-name">${name}</h3>
+          <p class="testi-title">Gamer</p>
+        </div>
+      </div>
+      <blockquote class="testi-text">${text}</blockquote>
+    </div>
+  `;
+
+  // Add new testimonial to the list
+  testimonialsList.appendChild(li);
+
+  // Scroll to the new feedback
+  li.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  // Reset the form
+  feedbackForm.reset();
+});
+</script>
+
+  <!-- PROFILE SCRIPT -->
+  <script>
+    function loadProfileToHeader() {
+      const data = JSON.parse(localStorage.getItem('soraniProfile') || '{}');
+      const nameEl = document.getElementById('profileName');
+      const avatarEl = document.getElementById('profileAvatar');
+      nameEl.textContent = data.name || 'Guest';
+      if (data.avatar) {
+        avatarEl.innerHTML = '<img src="' + data.avatar + '" alt="avatar">';
+      } else {
+        avatarEl.innerHTML = '<span>No Img</span>';
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadProfileToHeader);
+  
+
+
+document.querySelectorAll('.promo-card, .platforms-menu-card, .food-menu-platforms')
+.forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty('--x', `${e.clientX - rect.left}px`);
+    card.style.setProperty('--y', `${e.clientY - rect.top}px`);
+  });
+});
+
+
+
+
+const slider = document.getElementById("homeSlider");
+const thumb = document.getElementById("sliderThumb");
+
+slider.addEventListener("scroll", () => {
+  const maxScroll = slider.scrollWidth - slider.clientWidth;
+  const scrollPercent = slider.scrollLeft / maxScroll;
+  thumb.style.left = `${scrollPercent * 80}px`;
+});
+</script>
+
+<script>
+  // Simulate logged-in user check
+  const userData = JSON.parse(localStorage.getItem('soraniProfile') || '{}');
+  const isLoggedIn = !!userData.email; // If email exists, user is logged in
+
+  // Add click listeners to all buy buttons
+  document.querySelectorAll('.buy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      if (!isLoggedIn) {
+        alert("You must have an account to buy this item!");
+      } else {
+        // Show payment instruction
+        alert("Thank you for your purchase! Please send the money to this number: 07518167172");
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
