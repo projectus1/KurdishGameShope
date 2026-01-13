@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIN</title>
-    <link rel="stylesheet" href="./LogIN_files/logintoo.css">
-    </head><body>
+    <link rel="stylesheet" href="LogIN_files/logintoo.css">
+</head>
+<body>
 
+<form onsubmit="login(event)">
+    Email:
+    <input type="email" id="email" required>
 
-    <form method="POST" action="SignIn.php">  
-  
+    Password:
+    <input type="password" id="pass" required>
 
-Email:  
-<input type="email" id="email" name="email" required>     
-Password:  
-<input type="password" id="pass" name="pass" required>     
-<input type="submit" value="Submit">
-<a href="SignUp.html" class="signup-btn">Create New Account</a>
+    <input type="submit" value="Submit">
+    <a href="SignUp.html" class="signup-btn">Create New Account</a>
 </form>
 
-</body></html>
+<script>
+function login(e) {
+    e.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pass").value;
+
+    let userData = localStorage.getItem(email);
+
+    if (!userData) {
+        alert("User not found");
+        return;
+    }
+
+    let user = JSON.parse(userData);
+
+    if (user.password === pass) {
+        alert("Login successful!");
+        // redirect after login
+        window.location.href = "index.html";
+    } else {
+        alert("Wrong password");
+    }
+}
+</script>
+
+</body>
+</html>
