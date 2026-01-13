@@ -504,21 +504,82 @@ button:hover,
   top: -10px;
 }
 /* Example for main container */
-.container {
-    width: 90%;       /* takes 90% of screen width */
-    max-width: 1200px; /* never gets too wide on big screens */
-    margin: 0 auto;   /* center the container */
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-/* Mobile screens */
+/* Mobile fixes */
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
+    /* Reduce padding for sections */
+    section.Home,
+    #platforms,
+    #services,
+    #feedback {
+        padding: 60px 20px; /* smaller padding for mobile */
     }
-    .container {
-        width: 95%;
+
+    /* Home section image smaller */
+    .home img {
+        width: 250px; /* smaller on phone */
+    }
+
+    /* Home content text */
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    .home-content h3 {
+        font-size: 1.2rem;
+    }
+    .home-content p {
+        font-size: 0.95rem;
+    }
+
+    /* Adjust slider cards */
+    .home-slider {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .home-card {
+        min-width: 200px;
+        padding: 1rem;
+    }
+    .home-card h3 {
+        font-size: 1.3rem;
+    }
+    .home-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Platforms / Services cards */
+    .platforms-menu-list,
+    .section-list {
+        gap: 20px;
+    }
+    .platforms-menu-card,
+    .food-menu-platforms,
+    .section-card {
+        min-width: 100%;
+    }
+
+    /* Feedback / Testimonial text smaller */
+    .section-text,
+    .testi-text {
+        font-size: 0.9rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Buttons smaller */
+    button,
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    /* Header nav adjustments */
+    header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+    nav a {
+        margin-left: 10px;
+        font-size: 0.9rem;
     }
 }
