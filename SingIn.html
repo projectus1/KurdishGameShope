@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)http://localhost/hhhh/hhhh/css/logintoo.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogIN</title>
-    <link rel="stylesheet" href="./LogIN_files/logintoo.css">
-    </head><body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <style>
+    body { font-family: Arial; display:flex; justify-content:center; align-items:center; height:100vh; background:#f0f0f0; }
+    form { background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2); }
+    input { display:block; margin:10px 0; padding:8px; width:100%; }
+    .signup-btn { display:block; text-align:center; margin-top:10px; color:blue; text-decoration:none; }
+  </style>
+</head>
+<body>
 
-
-    <form method="POST" action="SignIn.php">  
-  
-
-Email:  
-<input type="email" id="email" name="email" required>     
-Password:  
-<input type="password" id="pass" name="pass" required>     
-<input type="submit" value="Submit">
-<a href="SignUp.html" class="signup-btn">Create New Account</a>
+<form id="loginForm">
+  <h2>Log In</h2>
+  Email:  
+  <input type="email" id="email" required>     
+  Password:  
+  <input type="password" id="pass" required>     
+  <input type="submit" value="Submit">
+  <a href="SignUp.html" class="signup-btn">Create New Account</a>
 </form>
 
-</body></html>
+<script>
+const loginForm = document.getElementById('loginForm');
+
+// Demo: A predefined user
+const demoUser = {
+  email: "user@example.com",
+  password: "123456",
+  name: "Demo User"
+};
+
+loginForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+  const pass = document.getElementById('pass').value;
+
+  if(email === demoUser.email && pass === demoUser.password){
+    // Save login info in localStorage
+    localStorage.setItem('loggedInUser', JSON.stringify(demoUser));
+    alert('Login successful!');
+    window.location.href = 'index.html'; // redirect to main page
+  } else {
+    alert('Wrong email or password!');
+  }
+});
+</script>
+
+</body>
+</html>
