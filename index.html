@@ -787,7 +787,16 @@ if (!localStorage.getItem("loggedInUser")) {
     window.location.href = "SingIn.html";
 }
 </script>
+<p id="userInfo"></p>
 
+<script>
+let email = localStorage.getItem("loggedInUser");
+if (email) {
+    let user = JSON.parse(localStorage.getItem(email));
+    document.getElementById("userInfo").innerText =
+        "Welcome, " + user.firstName;
+}
+</script>
 
 </body>
 </html>
