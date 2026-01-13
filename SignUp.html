@@ -8,25 +8,53 @@
 </head>
 <body>
 
-<form method="POST" action="SignUp.php">
+<form onsubmit="signup(event)">
     <h2>Sign Up</h2>
 
     <label>First Name</label>
-    <input type="text" name="first_name" required>
+    <input type="text" id="first_name" required>
 
     <label>Email</label>
-    <input type="email" name="email" required>
+    <input type="email" id="email" required>
 
     <label>Password</label>
-    <input type="password" name="pass" required>
+    <input type="password" id="pass" required>
 
     <label>Confirm Password</label>
-    <input type="password" name="confirm_pass" required>
+    <input type="password" id="confirm_pass" required>
 
     <input type="submit" value="Sign Up">
 
     <a href="SingIn.html">Already have an account? Sign in</a>
 </form>
+
+<script>
+function signup(e) {
+    e.preventDefault();
+
+    let firstName = document.getElementById("first_name").value;
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pass").value;
+    let confirmPass = document.getElementById("confirm_pass").value;
+
+    if (pass !== confirmPass) {
+        alert("Passwords do not match");
+        return;
+    }
+
+    // Save user in localStorage
+    let user = {
+        firstName: firstName,
+        email: email,
+        password: pass
+    };
+
+    localStorage.setItem(email, JSON.stringify(user));
+
+    alert("Sign up successful!");
+    window.location.href = "SingIn.html";
+}
+</script>
 
 </body>
 </html>
