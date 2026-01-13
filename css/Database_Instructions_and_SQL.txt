@@ -1,0 +1,28 @@
+Creating the Database and Users Table in phpMyAdmin:
+
+1. Log in to phpMyAdmin:
+   - Open your browser and go to: http://localhost/phpmyadmin (adjust URL as per your setup)
+   - Enter your MySQL username and password.
+
+2. Create a New Database:
+   - On the left side, click "New".
+   - Enter Database name: user_auth
+   - Choose collation (e.g., utf8_general_ci)
+   - Click "Create".
+
+3. Create Users Table:
+   - Select the newly created database `user_auth` from the left menu.
+   - Click on the "SQL" tab at the top.
+   - Paste the following SQL query and click "Go":
+
+```sql
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+```
+
+This creates a simple users table with an ID, email (unique), and password fields.
+
+You now have the database and table ready to store user sign up information.

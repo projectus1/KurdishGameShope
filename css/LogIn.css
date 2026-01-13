@@ -1,0 +1,91 @@
+
+body {
+  background: linear-gradient(180deg, #0b0c0d 0%, #0f1215 60%);
+  font-family: 'Poppins', sans-serif;
+  color: #e6f2f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form box */
+form {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  width: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #bfc9ca;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 18px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Hover/focus effect */
+input:focus {
+  border-color: #55f0d1;
+  box-shadow: 0 0 8px rgba(85, 240, 209, 0.3);
+}
+
+  
+/* Phone inputs inline */
+input[name="country code"] {
+  width: 50px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+/* Submit button */
+input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, rgba(0, 28, 119, 0.25), rgba(85,240,209,0.15));
+  border: 1px solid rgba(24, 27, 189, 0.3);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  align-items: center;
+}
+
+input[type="button"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(2, 196, 255, 0.25);
+}
+
+/* Title (optional if you add one) */
+h2 {
+  text-align: center;
+  color: #55f0d1;
+  margin-bottom: 20px;
+}
+
+/* Smooth look for the whole page */
+::selection {
+  background-color: #55f0d1;
+  color: #000;
+}

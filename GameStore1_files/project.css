@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #8081ce;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(20, 20, 20, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #66fcf1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a {
+  color: #c5c6c7;
+  margin-left: 25px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #66fcf1;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+#profileDisplay {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  color: #c5c6c7;
+}
+
+#profileAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #45a29e;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+/* ================= HOME ================= */
+section.Home {
+  min-height: 100vh;
+  padding: 120px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#home {
+  flex-direction: row;
+}
+
+#home .container {
+  justify-content: center;
+}
+
+.home img {
+  width: 400px;
+  border-radius: 70%;
+  border: 3px solid #45a29e;
+  box-shadow: 0 0 25px #45a29e;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.home-content h1 span {
+  color: #66fcf1;
+}
+
+.home-content h3 {
+  font-size: 1.5rem;
+  color: #c5c6c7;
+}
+
+.home-content p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #c5c6c7;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+/* ===============================
+   PRO BUTTON STYLE (GLOBAL)
+================================ */
+
+/* ===============================
+   HOME FEATURE SLIDER
+================================ */
+.home-feature {
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.home-slider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 2rem;
+}
+
+.home-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.home-card {
+  min-width: 260px;
+  background: linear-gradient(
+    to bottom,
+    var(--second-color),
+    var(--main-color)
+  );
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.home-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-card p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.home-card img {
+  width: 100%;
+  margin-top: 1.2rem;
+  border-radius: 50%;
+  background: white;
+  padding: 0.5rem;
+}
+
+/* ===============================
+   SLIDER BAR
+================================ */
+.slider-bar {
+  width: 120px;
+  height: 6px;
+  background: #ddd;
+  margin: 1.5rem auto 0;
+  border-radius: 20px;
+  position: relative;
+}
+
+.slider-thumb {
+  width: 40px;
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  transition: 0.2s ease;
+}
+
+
+
+
+
+
+
+
+button,
+.btn {
+  position: relative;
+  background: linear-gradient(135deg, #66fcf1, #45a29e);
+  color: #000;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button::before,
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+button:hover::before,
+.btn:hover::before {
+  opacity: 1;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(102, 252, 241, 0.45);
+}
+
+.btn a {
+  color: inherit;
+  text-decoration: none;
+}
+/* ===============================
+   GAMES (INSPIRED BY PROMO)
+================================ */
+
+
+
+
+#platforms {
+  padding: 120px 80px;
+}
+
+.platforms-menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  list-style: none;
+}
+
+.platforms-menu-card,
+.food-menu-platforms {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(102, 252, 241, 0.2);
+  transition: 0.4s ease;
+}
+
+.platforms-menu-card:hover,
+.food-menu-platforms:hover {
+  transform: translateY(-10px);
+  border-color: #66fcf1;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+}
+
+.card-platforms img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.badge {
+  background: linear-gradient(135deg, #66fcf1, #45a29e);
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 800;
+}
+
+.price {
+  color: #66fcf1;
+  font-weight: 800;
+}
+
+.del {
+  color: #888;
+}
+
+#services {
+  padding: 120px 80px;
+}
+
+#services .container p {
+  text-align: center;
+}
+
+.section-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  list-style: none;
+}
+
+.section-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(102, 252, 241, 0.25);
+  transition: 0.4s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+.section-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.section-item-content {
+  padding: 20px;
+}
+
+#feedback {
+  padding: 120px 80px;
+}
+
+#feedback form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#feedback input,
+#feedback textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(102, 252, 241, 0.3);
+  padding: 16px 18px;
+  border-radius: 16px;
+  color: #fff;
+}
+
+#feedback input:focus,
+#feedback textarea:focus {
+  outline: none;
+  border-color: #66fcf1;
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.35);
+}
