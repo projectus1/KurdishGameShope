@@ -583,3 +583,37 @@ button:hover,
         font-size: 0.9rem;
     }
 }
+/* Buy Now notification */
+.buy-notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #66fcf1, #45a29e);
+  color: #0b0c10;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 250px;
+}
+
+/* Show the notification */
+.buy-notification.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Optional: add an icon */
+.buy-notification i {
+  font-size: 20px;
+  color: #0b0c10;
+}
