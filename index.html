@@ -782,6 +782,12 @@ document.querySelectorAll('.buy-btn').forEach(button => {
   });
 });
 </script>
+<script>
+if (!localStorage.getItem("loggedInUser")) {
+    window.location.href = "SingIn.html";
+}
+</script>
+
 
 </body>
 </html>
