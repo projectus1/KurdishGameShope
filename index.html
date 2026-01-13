@@ -754,7 +754,34 @@ slider.addEventListener("scroll", () => {
 <div id="buyNotification" class="buy-notification">
   <p id="buyMessage">Thank you for your purchase!</p>
 </div>
+<script>
+function showBuyNotification(message) {
+  const notification = document.getElementById('buyNotification');
+  const messageEl = document.getElementById('buyMessage');
 
+  messageEl.textContent = message;
+  notification.classList.add('show');
+
+  // Hide after 3 seconds
+  setTimeout(() => {
+    notification.classList.remove('show');
+  }, 3000);
+}
+
+// Update your buy buttons
+document.querySelectorAll('.buy-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const userData = JSON.parse(localStorage.getItem('soraniProfile') || '{}');
+    const isLoggedIn = !!userData.email;
+
+    if (!isLoggedIn) {
+      showBuyNotification("You must have an account to buy this item!");
+    } else {
+      showBuyNotification("Thank you for your purchase! Send money to: 07518167172");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
