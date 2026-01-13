@@ -503,3 +503,9 @@ button:hover,
   left: 0;
   top: -10px;
 }
+/* Example for main container */
+.container {
+    width: 90%;       /* takes 90% of screen width */
+    max-width: 1200px; /* never gets too wide on big screens */
+    margin: 0 auto;   /* center the container */
+}
