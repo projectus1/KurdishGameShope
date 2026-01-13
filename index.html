@@ -24,39 +24,7 @@
       <a href="profile.html" id="profileDisplay">
         <div id="profileAvatar"></div>
         <span id="profileName">Profile</span>
-        <button id="logoutBtn">Logout</button>
-        <a href="LogIn.html" id="loginLink">Sign In</a>
-<a href="#" id="logoutLink" style="display:none;">Logout</a>
-<span id="welcomeUser"></span>
-
-<script>
-const loginLink = document.getElementById('loginLink');
-const logoutLink = document.getElementById('logoutLink');
-const welcomeUser = document.getElementById('welcomeUser');
-
-function updateHeader() {
-  const user = JSON.parse(localStorage.getItem('loggedInUser'));
-  if(user){
-    loginLink.style.display = 'none';
-    logoutLink.style.display = 'inline';
-    welcomeUser.textContent = 'Welcome, ' + user.name;
-  } else {
-    loginLink.style.display = 'inline';
-    logoutLink.style.display = 'none';
-    welcomeUser.textContent = '';
-  }
-}
-
-logoutLink.addEventListener('click', () => {
-  localStorage.removeItem('loggedInUser');
-  updateHeader();
-  alert('Logged out!');
-});
-
-updateHeader(); // run on page load
-</script>
-      </a>
-    </nav>
+    
   </header>
 
   <!-- HOME / HERO SECTION -->
