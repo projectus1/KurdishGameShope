@@ -362,26 +362,7 @@
     loadProfile();
   </script>
   
-  const logoutBtn = document.getElementById('logoutBtn');
-
-logoutBtn.addEventListener('click', () => {
-  // Remove user data
-  localStorage.removeItem('soraniProfile');
-
-  // Optional: show notification
-  showBuyNotification("You have logged out successfully!");
-
-  // Optional: redirect to login page after 1 second
-  setTimeout(() => {
-    window.location.href = "SingIn.html"; // change to your login page
-  }, 1000);
-});
-
   
-  <a href="profile.html" id="profileDisplay">
-  <div id="profileAvatar"></div>
-  <span id="profileName">Profile</span>
-</a>
-<button id="logoutBtn">Logout</button>
+  
 </body>
 </html>
