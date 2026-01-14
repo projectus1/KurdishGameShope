@@ -620,6 +620,6 @@ button:hover,
 
 .header-container {
   display: flex;
-  justify-content: flex-start; /* Aligns content to the left */
-  align-items: flex-start;     /* Aligns content to the top */
+  justify-content: right; /* Aligns content to the left */
+  align-items: right;     /* Aligns content to the top */
 }
