@@ -617,3 +617,9 @@ button:hover,
   font-size: 20px;
   color: #0b0c10;
 }
+
+.header-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: flex-start;     /* Aligns content to the top */
+}
