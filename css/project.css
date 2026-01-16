@@ -417,6 +417,14 @@ button:hover,
   border-color: #66fcf1;
   box-shadow: 0 0 20px rgba(102, 252, 241, 0.35);
 }
+@keyframes glow {
+  0% { text-shadow: 0 0 8px rgba(57, 240, 229, 0.4); }
+  100% { text-shadow: 0 0 18px rgba(57, 240, 229, 0.9); }
+}
+
+.section-title span {
+  animation: glow 2s ease-in-out infinite alternate;
+}
 
 
 /* ===============================
