@@ -845,6 +845,27 @@ document.querySelectorAll('.buy-btn').forEach(button => {
   });
 });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const data = JSON.parse(localStorage.getItem("soraniProfile") || "{}");
+
+    const avatarEl = document.getElementById("profileAvatar");
+    const nameEl = document.getElementById("profileName");
+
+    if (avatarEl) {
+      if (data.avatar) {
+        avatarEl.innerHTML = `<img src="${data.avatar}" alt="avatar">`;
+      } else {
+        avatarEl.innerHTML = `<i class="fa-solid fa-user"></i>`;
+      }
+    }
+
+    if (nameEl && data.username) {
+      nameEl.textContent = data.username;
+    }
+  });
+</script>
+
 
 
 </body>
