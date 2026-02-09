@@ -44,5 +44,20 @@
   };
 </script>
 
+<script>
+function addToCart() {
+  const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+
+  cart.push({
+    name: document.getElementById("productName").textContent,
+    price: document.getElementById("productPrice").textContent,
+    img: document.getElementById("productImg").src
+  });
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Added to cart 🛒");
+}
+</script>
+
 </body>
 </html>
