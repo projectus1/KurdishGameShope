@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Product</title>
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">GameShope</a>
+</header>
+
+<section class="Home">
+  <div class="home-content">
+    <h1 id="productName">Product Name</h1>
+    <p id="productDesc">Product description here</p>
+    <h2 id="productPrice">$0</h2>
+    <button class="buy-btn" id="confirmBuy">Confirm Purchase</button>
+  </div>
+
+  <div class="container">
+    <img id="productImg" src="" alt="product">
+  </div>
+</section>
+
+<script>
+  // get product data from URL
+  const params = new URLSearchParams(window.location.search);
+
+  document.getElementById("productName").textContent = params.get("name");
+  document.getElementById("productDesc").textContent = params.get("desc");
+  document.getElementById("productPrice").textContent = "$" + params.get("price");
+  document.getElementById("productImg").src = params.get("img");
+
+  // buy button
+  document.getElementById("confirmBuy").onclick = () => {
+    const userData = JSON.parse(localStorage.getItem('soraniProfile') || '{}');
+    if (!userData.email) {
+      alert("You must login first!");
+    } else {
+      alert("Order confirmed ✅ We will contact you soon.");
+    }
+  };
+</script>
+
+</body>
+</html>
