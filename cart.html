@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+<section class="Home">
+  <div class="home-content">
+    <h1>Your Cart 🛒</h1>
+    <div id="cartItems"></div>
+    <button class="buy-btn" onclick="checkout()">Checkout</button>
+  </div>
+</section>
+
+<script>
+const cartItems = JSON.parse(localStorage.getItem("cart") || "[]");
+const container = document.getElementById("cartItems");
+
+cartItems.forEach(item => {
+  container.innerHTML += `
+    <p>${item.name} - ${item.price}</p>
+  `;
+});
+
+function checkout() {
+  window.location.href = "checkout.php";
+}
+</script>
+
+</body>
+</html>
